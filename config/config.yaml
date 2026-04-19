@@ -1,0 +1,79 @@
+# Example configuration file for Mnemo
+
+app_name: Mnemo
+version: 0.1.0
+debug: false
+log_level: INFO
+
+# Directory settings
+data_dir: ~/.mnemo
+cache_dir: ~/.mnemo/cache
+models_dir: ~/.mnemo/models
+
+# Working memory settings
+working_memory_size: 1000
+memory_forgetting_rate: 0.05
+
+# Perceiver settings
+perceiver:
+  max_concurrent_searches: 5
+  search_timeout_seconds: 30
+  max_papers_per_query: 20
+  max_documents_crawl: 100
+  crawl_depth: 3
+  cache_ttl_seconds: 3600
+  retry_attempts: 3
+  search_provider: duckduckgo
+  use_arxiv: true
+  use_semantic_scholar: false
+
+# Dream Engine settings
+dream_engine:
+  dream_interval_minutes: 60
+  min_memories_for_dream: 10
+  max_memories_per_dream: 100
+  compression_ratio: 0.3
+  min_importance_threshold: 0.5
+  consolidation_strength: 0.8
+  forgetting_rate: 0.1
+  enable_novel_connections: true
+  novelty_threshold: 0.6
+  creative_blend_ratio: 0.2
+  max_dream_duration_seconds: 300
+
+# Knowledge Graph settings
+knowledge_graph:
+  storage_backend: sqlite
+  db_path: ~/.mnemo/knowledge.db
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  max_node_degree: 100
+  entity_similarity_threshold: 0.85
+  relation_confidence_threshold: 0.7
+  enable_transitive_closure: true
+  max_path_length: 5
+
+# Reasoning settings
+reasoning:
+  inference_depth: 3
+  max_hypotheses: 10
+  confidence_threshold: 0.6
+  enable_deductive: true
+  enable_inductive: true
+  enable_abductive: true
+  enable_chain_of_thought: true
+  max_thought_steps: 10
+  max_context_tokens: 4096
+
+# Self-Evolution settings
+self_evolution:
+  learning_rate: 0.01
+  exploration_rate: 0.1
+  exploitation_rate: 0.9
+  adaptation_interval_minutes: 30
+  min_samples_for_adaptation: 20
+  mutate_search_queries: true
+  crossover_strategies: true
+  mutation_probability: 0.2
+  track_all_metrics: true
+  enable_feedback_loop: true
+  feedback_weight: 0.3
