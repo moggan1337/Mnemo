@@ -22,6 +22,24 @@
 
 ---
 
+## 🎬 Demo
+![Mnemo Demo](demo.gif)
+
+*Autonomous research with dream distillation*
+
+## Screenshots
+| Component | Preview |
+|-----------|---------|
+| Research Dashboard | ![dashboard](screenshots/dashboard.png) |
+| Knowledge Graph | ![graph](screenshots/knowledge-graph.png) |
+| Dream State | ![dream](screenshots/dream-state.png) |
+
+## Visual Description
+Research dashboard shows active queries and source gathering. Knowledge graph displays learned concepts with connections. Dream state shows consolidation process with memory integration.
+
+---
+
+
 ## Table of Contents
 
 1. [Overview](#overview)
